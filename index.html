@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link href="style.css" rel="stylesheet">
+    <img rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/ef53f19fd7.js" crossorigin="anonymous"></script>
+   
+</head>
+<body><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+  <div class="title">
+    <h><b>T I P<br>A P P</b></h>
+  </div>
+    <div class="container"> <!--container holding left and right form-->
+      <div class="form-left"> <!--left hand form with bill field tips and number field-->
+        <div>
+          <form>
+            <label>BILL</label>
+              <input id="bill-field" type="number" oninput="this.value=(parseInt(this.value)=1)" placeholder="0">
+              <span class="icon"><i class="fa fa-dollar"></i></span>
+          </form>
+        </div>
+        <div>
+          <label class="select">Select Tip %</label>
+            <div class="tip">
+            <div id="tips Five" class="tips tip-5">5%</div>
+            <div id="tips Ten" class="tips tip-10">10%</div>
+            <div id="tips Fif" class="tips tip-15">15%</div>
+            <div id="tips Twe" class="tips tip-20">20%</div>
+            </div>
+        </div>
+        <div class="form number">
+          <div class="number">
+            <form>
+              <label>Number of People</label>
+                <input id="people-field" type="number" oninput="this.value=(parseInt(this.value))" placeholder="0"> 
+                <span class="icon"><i class="fa fa-user"></i></span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-right">
+        <label class="tip-amount-h">Tip Amount</label>
+          <label class="per">/person</label>
+          <div class="tip-display">
+          <span id="tip-amount" class="display">$0</span>
+        </div>
+        <div class="number">
+        <label>Total</label>
+          <label class="per">/person</label>
+          <div class="number-display">
+          <span id="per-person" class="display">$0</i></span>
+          </div>
+        <div class="reset">
+          <button id="reset-button" type="reset">RESET</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script><!-- always put js script just
+    before body tag-->
+</body>
+</html>
